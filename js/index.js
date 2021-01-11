@@ -54,3 +54,7 @@ navFifthLink.textContent = siteContent.nav["nav-item-5"];
 navSixthLink.textContent = siteContent.nav["nav-item-6"];
 let ctatext = document.querySelector(".cta-text h1");
 ctatext.textContent =siteContent.cta['h1'];
+let ctabutton = document.querySelector(".cta-text button");
+ctabutton.textContent = siteContent.cta['button'];
+let ctaimg = document.querySelector('#cta-img');
+ctaimg.src = siteContent.cta['img-src'];
