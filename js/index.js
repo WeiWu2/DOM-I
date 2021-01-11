@@ -56,7 +56,7 @@ navSixthLink.textContent = siteContent.nav["nav-item-6"];
 
 //Header
 let ctaText = document.querySelector(".cta-text h1");
-ctaText.textContent =siteContent.cta['h1'];
+ctaText.innerHTML = "DOM <br> Is <br> Awesome"
 let ctaButton = document.querySelector(".cta-text button");
 ctaButton.textContent = siteContent.cta['button'];
 let ctaImg = document.querySelector('#cta-img');
@@ -93,7 +93,7 @@ visionText.textContent = siteContent["main-content"]["vision-content"];
 let contact = document.querySelector(".contact h4");
 contact.textContent = siteContent.contact["contact-h4"];
 let contactAddress = contact.nextElementSibling;
-contactAddress.textContent = siteContent.contact["address"];
+contactAddress.innerHTML = "123 Way 456 Street <br> Somewhere, USA"
 let contactPhone = contactAddress.nextElementSibling;
 contactPhone.textContent = siteContent.contact["phone"];
 let contactEmail = contactPhone.nextElementSibling;
