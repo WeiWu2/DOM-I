@@ -38,6 +38,7 @@ const siteContent = {
 };
 
 // Example: Update the img src for the logo
+//Nav
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 let navFirstLink = document.querySelector('nav a');
@@ -52,12 +53,16 @@ navThirdLink.textContent = siteContent.nav["nav-item-3"];
 navFourthLink.textContent = siteContent.nav["nav-item-4"];
 navFifthLink.textContent = siteContent.nav["nav-item-5"];
 navSixthLink.textContent = siteContent.nav["nav-item-6"];
+
+//Header
 let ctaText = document.querySelector(".cta-text h1");
 ctaText.textContent =siteContent.cta['h1'];
 let ctaButton = document.querySelector(".cta-text button");
 ctaButton.textContent = siteContent.cta['button'];
 let ctaImg = document.querySelector('#cta-img');
 ctaImg.src = siteContent.cta['img-src'];
+
+//main content
 let topTextHeading = document.querySelector(".main-content .top-content .text-content h4");
 topTextHeading.textContent = siteContent["main-content"]["features-h4"];
 let topText = topTextHeading.nextElementSibling;
@@ -68,3 +73,20 @@ let topAboutContent = topAbout.nextElementSibling;
 topAboutContent.textContent = siteContent["main-content"]["about-content"];
 let middleImg = document.querySelector('#middle-img');
 middleImg.src =siteContent["main-content"]["middle-img-src"];
+
+// bottom content
+
+let services = document.querySelector(".bottom-content .text-content h4");
+services.textContent = siteContent["main-content"]["services-h4"];
+let servicesText = services.nextElementSibling;
+servicesText.textContent = siteContent["main-content"]["services-content"];
+let product = document.querySelector(".bottom-content .text-content:nth-child(2) h4");
+product.textContent = siteContent["main-content"]["product-h4"];
+let productText = product.nextElementSibling;
+productText.textContent = siteContent["main-content"]["product-content"];
+let vision = document.querySelector(".bottom-content .text-content:last-child h4");
+vision.textContent = siteContent["main-content"]["vision-h4"];
+let visionText = vision.nextElementSibling;
+visionText.textContent = siteContent["main-content"]["vision-content"];
+
+//contact
