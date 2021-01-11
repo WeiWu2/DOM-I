@@ -90,3 +90,15 @@ let visionText = vision.nextElementSibling;
 visionText.textContent = siteContent["main-content"]["vision-content"];
 
 //contact
+let contact = document.querySelector(".contact h4");
+contact.textContent = siteContent.contact["contact-h4"];
+let contactAddress = contact.nextElementSibling;
+contactAddress.textContent = siteContent.contact["address"];
+let contactPhone = contactAddress.nextElementSibling;
+contactPhone.textContent = siteContent.contact["phone"];
+let contactEmail = contactPhone.nextElementSibling;
+contactEmail.textContent = siteContent.contact["email"];
+
+//footer
+let footer = document.querySelector("footer p")
+footer.textContent = siteContent.footer['copyright'];
